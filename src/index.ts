@@ -4,8 +4,16 @@ import cors from "cors";
 
 dotenv.config();
 
+// Own modules
+import authRouter from "./router/auth";
+
 const app = express();
+app.use(express.json());
+
+app.use("/auth", authRouter);
+
 const port = process.env.PORT;
+
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Express + TypeScript Server is running right now.');
