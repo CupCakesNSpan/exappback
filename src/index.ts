@@ -5,7 +5,7 @@ import cors from "cors";
 dotenv.config();
 
 // Own modules
-import authRouter from "./router/auth";
+import authRouter from "@router/auth";
 
 const app: Express = express();
 app.use(express.json());

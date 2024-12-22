@@ -1,5 +1,5 @@
-import express, { Request, Response, NextFunction, Router } from "express";
-import { getPublicKey } from "src/controllers/authController";
+import express, { Request, Response, Router } from "express";
+import { getPublicKey } from "@controllers/authController";
 
 const authRouter: Router = express.Router();
 
