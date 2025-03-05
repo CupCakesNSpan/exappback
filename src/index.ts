@@ -6,6 +6,7 @@ dotenv.config();
 
 // Own modules
 import authRouter from "@router/auth";
+import onboardingRouter from "@router/onboarding";
 
 const app: Express = express();
 app.use(express.json());
@@ -23,6 +24,7 @@ app.get('/', (req: Request, res: Response) => {
 
 // Authorization routes
 app.use("/auth", authRouter);
+app.use("/onboarding", onboardingRouter);
 
 
 

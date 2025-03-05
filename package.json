@@ -19,11 +19,15 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "knex": "^3.1.0",
+    "pg": "^8.13.3",
     "tsc-alias": "^1.8.10",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
+    "@types/knex": "^0.15.2",
     "concurrently": "^9.1.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2"
